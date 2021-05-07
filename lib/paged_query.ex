@@ -7,8 +7,10 @@ defmodule PagedQuery do
 
   @spec call(Ecto.Query.t(), page, page_size) :: Ecto.Query.t()
   def call(query, page, page_size) do
+    page_offset = page * page_size
+
     query
-    |> offset(^page)
+    |> offset(^page_offset)
     |> limit(^page_size)
   end
 end
