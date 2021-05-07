@@ -11,7 +11,7 @@ Add the `paged_query` package to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:paged_query, "~> 0.0.1"}
+    {:paged_query, "~> 0.0.2"}
   ]
 end
 ```
