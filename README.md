@@ -16,6 +16,20 @@ def deps do
 end
 ```
 
+## Usage
+
+```elixir
+require Ecto.Query
+import Ecto.Query
+
+page = 0
+page_size = 50
+
+from(Blog)
+|> PagedQuery.call(page, page_size)
+|> Repo.all()
+```
+
 ## Authors
 
 - Alex Kwiatkowski - alex+git@fremantle.io
