@@ -28,7 +28,7 @@ defmodule PagedQuery.MixProject do
   defp deps do
     [
       {:ecto, "~> 3.6"},
-      {:ecto_sqlite3, "~> 0.5.5", only: [:dev, :test]},
+      {:ecto_sqlite3, "~> 0.8.2", only: [:dev, :test]},
       {:ex_machina, "~> 2.7.0", only: [:dev, :test]},
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:dialyxir, "~> 1.0", only: :dev, runtime: false},
